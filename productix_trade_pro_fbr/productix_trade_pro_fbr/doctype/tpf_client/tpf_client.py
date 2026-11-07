@@ -1,9 +1,7 @@
-# Copyright (c) 2026, TechoHub and contributors
-# For license information, please see license.txt
-
-# import frappe
 from frappe.model.document import Document
+from productix_trade_pro_fbr.validators import validate_ntn_cnic
 
 
 class TPFClient(Document):
-	pass
+    def validate(self):
+        validate_ntn_cnic(self.ntn_cnic)

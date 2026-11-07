@@ -1,3 +1,16 @@
+permission_query_conditions = {
+    "TPF Client": "productix_trade_pro_fbr.permissions.client_conditions",
+    "TPF Buyer": "productix_trade_pro_fbr.permissions.buyer_conditions",
+    "TPF Product": "productix_trade_pro_fbr.permissions.product_conditions",
+    "TPF Invoice": "productix_trade_pro_fbr.permissions.invoice_conditions",
+    "TPF FBR Log": "productix_trade_pro_fbr.permissions.log_conditions",
+}
+
+has_permission = {
+    dt: "productix_trade_pro_fbr.permissions.has_company_access"
+    for dt in ["TPF Client", "TPF Buyer", "TPF Product", "TPF Invoice", "TPF FBR Log"]
+}
+
 app_name = "productix_trade_pro_fbr"
 app_title = "ProductiX Trade Pro FBR"
 app_publisher = "TechoHub"

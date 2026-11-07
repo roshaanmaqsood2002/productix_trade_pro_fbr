@@ -1,9 +1,7 @@
-# Copyright (c) 2026, TechoHub and contributors
-# For license information, please see license.txt
-
-# import frappe
+import frappe
 from frappe.model.document import Document
 
 
 class TPFProduct(Document):
-	pass
+    def validate(self):
+        self.company = frappe.db.get_value("TPF Client", self.client, "company")
