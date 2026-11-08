@@ -1,0 +1,23 @@
+{
+ "creation": "2026-11-08 14:08:51.590229",
+ "currency": "PKR",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "document_type": "TPF Invoice",
+ "filters_json": "[[\"TPF Invoice\", \"status\", \"=\", \"Submitted to FBR\", false]]",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "TPF Submitted to FBR",
+ "modified": "2026-11-08 14:08:51.590229",
+ "modified_by": "Administrator",
+ "module": "ProductiX Trade Pro FBR",
+ "name": "TPF Submitted to FBR",
+ "owner": "Administrator",
+ "report_function": "Sum",
+ "show_full_number": 0,
+ "show_percentage_stats": 0,
+ "stats_time_interval": "Daily",
+ "type": "Document Type"
+}

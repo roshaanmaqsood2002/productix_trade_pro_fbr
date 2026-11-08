@@ -1,0 +1,23 @@
+{
+ "creation": "2026-11-08 14:08:51.600963",
+ "currency": "PKR",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "document_type": "TPF Invoice",
+ "filters_json": "[[\"TPF Invoice\", \"status\", \"=\", \"Draft\", false]]",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "TPF Draft Invoices",
+ "modified": "2026-11-08 14:08:51.600963",
+ "modified_by": "Administrator",
+ "module": "ProductiX Trade Pro FBR",
+ "name": "TPF Draft Invoices",
+ "owner": "Administrator",
+ "report_function": "Sum",
+ "show_full_number": 0,
+ "show_percentage_stats": 0,
+ "stats_time_interval": "Daily",
+ "type": "Document Type"
+}

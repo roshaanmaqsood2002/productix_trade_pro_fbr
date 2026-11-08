@@ -1,0 +1,80 @@
+{
+ "charts": [
+  {
+   "chart_name": "TPF Invoices by Status",
+   "label": "Invoices by Status"
+  }
+ ],
+ "content": "[{\"id\": \"h1\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Overview</b></span>\", \"col\": 12}}, {\"id\": \"n0\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"TPF Total Invoices\", \"col\": 3}}, {\"id\": \"n1\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"TPF Submitted to FBR\", \"col\": 3}}, {\"id\": \"n2\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"TPF Failed Invoices\", \"col\": 3}}, {\"id\": \"n3\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"TPF Draft Invoices\", \"col\": 3}}, {\"id\": \"c1\", \"type\": \"chart\", \"data\": {\"chart_name\": \"TPF Invoices by Status\", \"col\": 12}}, {\"id\": \"h2\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Shortcuts</b></span>\", \"col\": 12}}, {\"id\": \"s0\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"TPF Invoice\", \"col\": 3}}, {\"id\": \"s1\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"TPF Client\", \"col\": 3}}, {\"id\": \"s2\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"TPF Buyer\", \"col\": 3}}, {\"id\": \"s3\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"TPF Product\", \"col\": 3}}, {\"id\": \"s4\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"TPF FBR Log\", \"col\": 3}}]",
+ "creation": "2026-11-08 14:08:51.690194",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "icon": "receipt",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "ProductiX Trade Pro FBR",
+ "links": [],
+ "modified": "2026-11-08 14:08:51.690194",
+ "modified_by": "Administrator",
+ "module": "ProductiX Trade Pro FBR",
+ "name": "ProductiX Trade Pro FBR",
+ "number_cards": [
+  {
+   "label": "TPF Total Invoices",
+   "number_card_name": "TPF Total Invoices"
+  },
+  {
+   "label": "TPF Submitted to FBR",
+   "number_card_name": "TPF Submitted to FBR"
+  },
+  {
+   "label": "TPF Failed Invoices",
+   "number_card_name": "TPF Failed Invoices"
+  },
+  {
+   "label": "TPF Draft Invoices",
+   "number_card_name": "TPF Draft Invoices"
+  }
+ ],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 0.0,
+ "shortcuts": [
+  {
+   "doc_view": "List",
+   "label": "TPF Invoice",
+   "link_to": "TPF Invoice",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "TPF Client",
+   "link_to": "TPF Client",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "TPF Buyer",
+   "link_to": "TPF Buyer",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "TPF Product",
+   "link_to": "TPF Product",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "TPF FBR Log",
+   "link_to": "TPF FBR Log",
+   "type": "DocType"
+  }
+ ],
+ "title": "ProductiX Trade Pro FBR"
+}
