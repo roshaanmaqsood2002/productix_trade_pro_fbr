@@ -1,0 +1,30 @@
+{
+ "content": null,
+ "creation": "2026-11-08 19:17:41.303670",
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "chart",
+ "idx": 0,
+ "modified": "2026-11-08 19:17:41.303670",
+ "modified_by": "Administrator",
+ "module": "ProductiX Trade Pro FBR",
+ "name": "tpf-dashboard",
+ "owner": "Administrator",
+ "page_name": "tpf-dashboard",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "TPF Admin"
+  },
+  {
+   "role": "TPF Operator"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Trade Pro FBR Dashboard"
+}
