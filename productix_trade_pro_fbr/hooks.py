@@ -10,6 +10,7 @@ has_permission = {
     dt: "productix_trade_pro_fbr.permissions.has_company_access"
     for dt in ["TPF Client", "TPF Buyer", "TPF Product", "TPF Invoice", "TPF FBR Log"]
 }
+before_install = "productix_trade_pro_fbr.install.before_install"
 
 app_name = "productix_trade_pro_fbr"
 app_title = "ProductiX Trade Pro FBR"
