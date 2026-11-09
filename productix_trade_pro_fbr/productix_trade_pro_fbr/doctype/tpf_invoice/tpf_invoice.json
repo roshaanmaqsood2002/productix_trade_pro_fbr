@@ -18,7 +18,9 @@
   "total_sales_tax",
   "grand_total",
   "fbr_invoice_number",
-  "fbr_error"
+  "fbr_error",
+  "scenario_id",
+  "reference_invoice_no"
  ],
  "fields": [
   {
@@ -106,12 +108,25 @@
    "fieldtype": "Small Text",
    "label": "Last FBR Error",
    "read_only": 1
+  },
+  {
+   "fieldname": "scenario_id",
+   "fieldtype": "Data",
+   "label": "FBR Sandbox Scenario ID",
+   "description": "Sandbox only. Leave blank: SN001 for registered buyers, SN002 for unregistered."
+  },
+  {
+   "fieldname": "reference_invoice_no",
+   "fieldtype": "Data",
+   "label": "Reference FBR Invoice No",
+   "depends_on": "eval:doc.invoice_type=='Debit Note'",
+   "description": "Original FBR invoice number (debit notes only)."
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-11-07 19:47:48.580103",
+ "modified": "2026-11-09 13:19:58.535122",
  "modified_by": "Administrator",
  "module": "ProductiX Trade Pro FBR",
  "name": "TPF Invoice",

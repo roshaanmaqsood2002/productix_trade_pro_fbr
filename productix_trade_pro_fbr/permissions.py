@@ -31,8 +31,23 @@ def invoice_conditions(user=None): return _condition("TPF Invoice", user)
 def log_conditions(user=None):     return _condition("TPF FBR Log", user)
 
 
-def has_company_access(doc, user=None, permission_type=None):
+def has_company_access(doc, user=None, ptype=None, **kwargs):
     user = user or frappe.session.user
     if _is_super(user):
         return True
-    return doc.get("company") in _allowed_companies(user)
+    company = doc.get("company")
+    if not company and doc.get("client"):
+        company = frappe.db.get_value("TPF Client", doc.get("client"), "company")
+    return bool(company) and company in _allowed_companies(user)
+
+
+def assert_client_access(client_name):
+    """Raise unless the current user may use this TPF Client's company."""
+    if not client_name:
+        return
+    user = frappe.session.user
+    if _is_super(user):
+        return
+    company = frappe.db.get_value("TPF Client", client_name, "company")
+    if company not in _allowed_companies(user):
+        frappe.throw(_("You are not permitted to use this client."), frappe.PermissionError)

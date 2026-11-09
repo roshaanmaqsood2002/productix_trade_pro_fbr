@@ -15,7 +15,11 @@
   "tax_rate",
   "value_excl_tax",
   "sales_tax",
-  "total"
+  "total",
+  "sale_type",
+  "further_tax",
+  "sro_schedule_no",
+  "sro_item_serial_no"
  ],
  "fields": [
   {
@@ -85,13 +89,34 @@
    "in_list_view": 1,
    "label": "Total",
    "read_only": 1
+  },
+  {
+   "fieldname": "sale_type",
+   "fieldtype": "Data",
+   "label": "Sale Type",
+   "default": "Goods at standard rate (default)"
+  },
+  {
+   "fieldname": "further_tax",
+   "fieldtype": "Currency",
+   "label": "Further Tax"
+  },
+  {
+   "fieldname": "sro_schedule_no",
+   "fieldtype": "Data",
+   "label": "SRO Schedule No"
+  },
+  {
+   "fieldname": "sro_item_serial_no",
+   "fieldtype": "Data",
+   "label": "SRO Item Serial No"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-11-07 19:47:48.398397",
+ "modified": "2026-11-09 13:19:58.534028",
  "modified_by": "Administrator",
  "module": "ProductiX Trade Pro FBR",
  "name": "TPF Invoice Item",

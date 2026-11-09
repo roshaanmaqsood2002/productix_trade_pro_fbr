@@ -197,4 +197,4 @@ class TPFDashboard {
 			$("#tpf-status").html(`<div class="tpf-empty">${__("No invoices yet")}</div>`);
 		}
 	}
-}
+}	
